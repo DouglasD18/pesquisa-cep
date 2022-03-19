@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesquisa CEP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pesquisa CEP</h1>
+  </header>
+
+  <main>
+    <section>
+      <form>
+        <h2>Pesquise o CEP pelo endereço:</h2>
+        <input type="text" name="uf-input" id="uf-input" placeholder="Digite sua UF:" required>
+        <input type="text" name="cidade-input" id="cidade-input" placeholder="Digite sua cidade:" required>
+        <input type="text" name="logradouro-input" id="logradouro-input" placeholder="Digite seu logradouro:" required>
+        <button type="button" id="btn-semcep">Pesquisar</button>
+      </form>
+    </section>
+    <section>
+      <h2>Pesquise o endereço pelo CEP:</h2>
+      <label for="cep-input">Digite seu CEP:</label>
+      <input type="number" name="cep-input" id="cep-input" placeholder="Somente números" required>
+      <button type="button" id="btn-comcep">Pesquisar</button>
+      <div id="answer"></div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
